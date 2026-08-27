@@ -44,6 +44,54 @@ Every other luxury category photographs an object. Gastronomy photographs a *dec
 
 ---
 
+## Register: French haute cuisine
+
+**The brief:** a single portion. One protein, one sauce, one gesture of garnish. The white of the plate is not empty — it is the negative space that makes the food read.
+
+**What makes this register work:**
+
+| Element | What to write | What it does |
+|---|---|---|
+| Protein | `perfectly seared golden skin` · `cross-section of medium-rare` | Surface texture is the subject — the model must render crust, not meat |
+| Porcelain | `white Limoges porcelain, wide rim` · `Bernardaud coupe plate` | Wide rim creates built-in negative space the model is less likely to fill |
+| Sauce | `sauce poured at 6 o'clock position only` · `thin jus, specular highlight on surface` | Clock-face positioning forces geometry — `poured` prevents the flood default |
+| Garnish | `microherb at 2 o'clock, three leaves only` | Quantity specified prevents the model from overfilling the plate |
+| Angle | `45° camera angle` | The haute cuisine default — shows height, crust texture, and sauce depth simultaneously |
+| Light | `warm 3200K single overhead spot, no fill` | Warm light makes protein skin read as appetising — cold light kills it |
+| Negative space | `deep negative space on right half of plate` | Forces the model away from centred composition toward editorial asymmetry |
+
+**Full tested prompt** — produced the image above:
+
+```
+Poulet de Bresse breast supreme, perfectly seared golden skin,
+single portion on white Limoges porcelain,
+sauce poured at 6 o'clock position only,
+microherb garnish at 2 o'clock,
+45° camera angle, warm 3200K single overhead spot,
+deep negative space on right half of plate,
+photorealistic haute cuisine photography, Noma editorial aesthetic,
+shot on Hasselblad H6D-400C, tack sharp on skin texture,
+no text, no props, no background elements
+```
+
+**Seed:** 224324 · **Model:** soul_2 · **Ratio:** 3:4
+
+**Register variations by protein:**
+
+```
+"Turbot fillet, skin side up"         → cooler 4200K, skin texture finer, sauce more restrained
+"Soufflé au chocolat, 74%"            → horizontal/eye level — height is the argument, not composition
+"Langoustine tail, raw coral visible" → blue hour natural light 5500K, coral reads pink not orange
+"Côte de bœuf, dry-aged 60 days"     → darker plate, deeper shadow, smoke note at `wisps of steam`
+"Seasonal vegetable course, full veg" → shift to 80° near-overhead, cooler, more Nordic territory
+```
+
+**Why `Noma editorial aesthetic` works in a French haute cuisine prompt:**
+
+It is a reference collision. Invoking Noma activates the model's training on editorial restraint — clean plate, generous white space, geometric precision — without activating Noma's plating codes (no foraged element, no moss, no rough stone). The French protein keeps the register French; Noma keeps the framing editorial rather than commercial.
+
+---
+
 ## The plating-angle system
 
 Camera angle in gastronomy carries meaning that no other category has.
