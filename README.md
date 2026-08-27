@@ -1,5 +1,12 @@
 # higgsfield-gastronomy-prompts
 
+<div align="center">
+<img src="generated/poulet-bresse.png" width="60%" alt="Poulet de Bresse — haute cuisine 45° register">
+<br/><sub><code>soul_2</code> &nbsp;·&nbsp; Poulet de Bresse supreme &nbsp;·&nbsp; 45° angle, 3200K single overhead spot &nbsp;·&nbsp; 1536×2048 &nbsp;·&nbsp; seed 224324</sub>
+</div>
+
+<br/>
+
 **Gastronomy photography is a conversation between a chef's intention and a photographer's interpretation — and AI content is the first medium that can do both simultaneously.**
 
 Every plate is a composition that someone spent years learning to make. The photography has to show not just what it looks like but what it means — the restraint in the negative space, the precision of the sauce work, the geometry of the garnish. Get it wrong and it looks like food. Get it right and it looks like a restaurant worth three hours of your life and €300.
